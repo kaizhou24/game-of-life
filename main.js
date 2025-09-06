@@ -241,10 +241,10 @@ function generateDragonCurve() {
     sequence = next;
   }
   
-  // Draw the curve
-  let x = -width/4, y = 0;
+  // Draw the curve - centered
+  let x = 0, y = 0;
   let angle = 0;
-  let step = 3;
+  let step = 2;
   
   for (let i = 0; i < sequence.length; i++) {
     if (sequence[i] === 'F' || sequence[i] === 'G') {
