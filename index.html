@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game of Life</title>
-
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>Game of Life - p5.js Shaders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
 </head>
 <body>
-    <h1>Conway's Game of Life</h1>
+    <header>
+        <nav id="navbar">
+            <h1>Conway's Game of Life</h1>
+        </nav>
+    </header>
     
-    <canvas id="game-canvas" width="500" height="500"></canvas>
-
-    <py-script src="./main.py"></py-script>
-
+    <main id="canvas-container"></main>
+    
+    <script src="shaders.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
