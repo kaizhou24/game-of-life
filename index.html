@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life - p5.js Shaders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>Conway's Game of Life</h1>
+            <div class="navbar-controls">
+                <span class="control-info">
+                    Draw Cells
+                    <svg class="mouse-icon" width="14" height="20" viewBox="0 0 14 20" fill="none">
+                        <rect x="0.5" y="0.5" width="13" height="19" rx="6.5" stroke="currentColor" stroke-opacity="0.6"/>
+                        <path d="M1 8 L13 8" stroke="currentColor" stroke-opacity="0.6"/>
+                        <path d="M7 1 L7 8" stroke="currentColor" stroke-opacity="0.6"/>
+                        <path d="M 7 1 
+                                 L 7 8 
+                                 L 1 8 
+                                 A 6 6 0 0 1 1 7 
+                                 L 1 7 
+                                 A 6 6 0 0 1 7 1 
+                                 Z" fill="currentColor" fill-opacity="0.8"/>
+                    </svg>
+                </span>
+                <button class="control-button" onclick="clearCanvas();">
+                    Clear <span class="control-key">C</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="canvas-container"></main>
+    
+    <script src="shaders.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
